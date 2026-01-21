@@ -1,42 +1,156 @@
-<!DOCTYPE html>
-<html lang="pt-br>
-  <head>
-    <meta charset="UTF-8">
-
-         <h1 align="center"><font color="#000000"> Basketlifes </h1></font>
-         <align="center"> <img id="image1.jpg"img "src "![cabecalho](https://user-images.githubusercontent.com/107090581/194202236-1b58b4d6-7d91-435f-967d-71915582a0ca.png)"
-         width="40px" height="40px">
-  <link rel="stylesheet" herf="style.css">
-        
-  </head></font>
-
-  
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+    body {
+      box-sizing: border-box;
+    }
     
- <body bgcolor="Orange">                           
-        <h5 align=”right”>Joao Vitor, Carlos Eduardo , Guilherme </h5>
-   
-       <h2 align=”left”> <b>Missão</h2><b>
-       <h4 align="justify"> <p>Tudo sobre basquete,fundamentos,treinos,curiosidades sobre esse esporte <strong><b style=font-size:22px><font color="#008080"> </strong></font></b></font color> 
-         Saiba tudo sobre basquete e amplie seu conhecimento sobre esse esporte </h4></p>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+    
+    @keyframes float {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+    }
+    
+    @keyframes pulse-ring {
+      0% { transform: scale(0.8); opacity: 1; }
+      100% { transform: scale(1.4); opacity: 0; }
+    }
+    
+    .float-animation {
+      animation: float 3s ease-in-out infinite;
+    }
+    
+    .pulse-ring {
+      animation: pulse-ring 1.5s ease-out infinite;
+    }
+    
+    .whatsapp-gradient {
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+    }
+    
+    .bg-pattern {
+      background-color: #f0fdf4;
+      background-image: 
+        radial-gradient(circle at 20% 50%, rgba(37, 211, 102, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(18, 140, 126, 0.1) 0%, transparent 40%),
+        radial-gradient(circle at 40% 80%, rgba(37, 211, 102, 0.08) 0%, transparent 40%);
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full bg-pattern">
+  <div class="app-wrapper h-full w-full flex items-center justify-center p-6 overflow-auto">
+   <div class="max-w-md w-full"><!-- Card Principal -->
+    <div class="bg-white rounded-3xl shadow-2xl shadow-green-200/50 p-8 text-center relative overflow-hidden"><!-- Decoração de fundo -->
+     <div class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-green-100 to-transparent rounded-full -translate-y-1/2 translate-x-1/2"></div>
+     <div class="absolute bottom-0 left-0 w-24 h-24 bg-gradient-to-tr from-green-50 to-transparent rounded-full translate-y-1/2 -translate-x-1/2"></div><!-- Ícone WhatsApp -->
+     <div class="relative mb-6">
+      <div class="float-animation inline-block">
+       <div class="relative"><!-- Ring animado -->
+        <div class="absolute inset-0 whatsapp-gradient rounded-full pulse-ring"></div><!-- Círculo do ícone -->
+        <div class="whatsapp-gradient w-24 h-24 rounded-full flex items-center justify-center shadow-lg shadow-green-300/50 relative">
+         <svg class="w-14 h-14 text-white" viewbox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+         </svg>
+        </div>
+       </div>
+      </div>
+     </div><!-- Nome do Negócio -->
+     <h1 id="business-name" class="text-2xl font-bold text-gray-800 mb-2 relative">Meu Negócio</h1><!-- Mensagem de boas-vindas -->
+     <p id="welcome-message" class="text-gray-500 mb-6 relative">Olá! Clique abaixo para falar conosco pelo WhatsApp</p><!-- Número do WhatsApp -->
+     <div class="bg-gray-50 rounded-2xl p-4 mb-6 relative">
+      <p class="text-sm text-gray-400 mb-1">Nosso WhatsApp</p>
+      <p id="phone-display" class="text-xl font-semibold text-gray-700 tracking-wide">+55 (11) 99999-9999</p>
+     </div><!-- Botão de WhatsApp --> <a id="whatsapp-link" href="https://wa.me/5511999999999" target="_blank" rel="noopener noreferrer" class="whatsapp-gradient inline-flex items-center justify-center gap-3 w-full py-4 px-6 rounded-2xl text-white font-semibold text-lg shadow-lg shadow-green-400/30 hover:shadow-xl hover:shadow-green-400/40 transform hover:-translate-y-1 transition-all duration-300 relative overflow-hidden group"> <span class="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+      <svg class="w-6 h-6 relative" viewbox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+      </svg><span id="button-text" class="relative">Iniciar Conversa</span> </a> <!-- Indicador de disponibilidade -->
+     <div class="flex items-center justify-center gap-2 mt-6 text-sm text-gray-400"><span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span> <span>Disponível agora</span>
+     </div>
+    </div><!-- Rodapé -->
+    <p class="text-center text-gray-400 text-sm mt-6">Resposta rápida garantida 💬</p>
+   </div>
+  </div>
+  <script>
+    const defaultConfig = {
+      business_name: 'Meu Negócio',
+      phone_number: '5511999999999',
+      welcome_message: 'Olá! Clique abaixo para falar conosco pelo WhatsApp',
+      button_text: 'Iniciar Conversa',
+      primary_color: '#25D366',
+      text_color: '#1f2937',
+      background_color: '#f0fdf4',
+      surface_color: '#ffffff',
+      accent_color: '#128C7E'
+    };
 
-       <h2 align="left"><b>Visão</h2><b>
-       <h4 align="justify"> <p>Ampliar o conhecimento sobre o mundo do basquete e torna-los otimos hoppers .</h4> 
+    function formatPhoneNumber(phone) {
+      const cleaned = phone.replace(/\D/g, '');
+      if (cleaned.length === 13) {
+        return `+${cleaned.slice(0, 2)} (${cleaned.slice(2, 4)}) ${cleaned.slice(4, 9)}-${cleaned.slice(9)}`;
+      } else if (cleaned.length === 12) {
+        return `+${cleaned.slice(0, 2)} (${cleaned.slice(2, 4)}) ${cleaned.slice(4, 8)}-${cleaned.slice(8)}`;
+      } else if (cleaned.length === 11) {
+        return `(${cleaned.slice(0, 2)}) ${cleaned.slice(2, 7)}-${cleaned.slice(7)}`;
+      }
+      return phone;
+    }
 
-       <h2 align=”left”> <b>O que fazemos?</h2><b>
-       <h4 align=“justify”> <p>Trabalhamos com crianças adolescentes e adultos, e aprimorar seus conhecimentos sobre esse esporte,apresentando dicas,treinos,regras e beneficios deste esporte e preparando-os parar se tornarem exelentes hoppers .</h4> 
+    function getWhatsAppLink(phone) {
+      const cleaned = phone.replace(/\D/g, '');
+      return `https://wa.me/${cleaned}`;
+    }
 
-       <h2 align=”left”> <b>Quem somos?</h2><b>
-       <h4 align=“justify”> <p>Preparamos pessoas de todas as idades para começar a praticar esse esporte.</h4> 
+    async function onConfigChange(config) {
+      const businessName = config.business_name || defaultConfig.business_name;
+      const phoneNumber = config.phone_number || defaultConfig.phone_number;
+      const welcomeMessage = config.welcome_message || defaultConfig.welcome_message;
+      const buttonText = config.button_text || defaultConfig.button_text;
 
-       <h2 align=”left”> <b>O que oferecemos?</h2><b>
-       <h4 align=“justify”> <p>Dicas,treinos,beneficios deste esporte, e varios assuntos sobre o mundo de um hopper.</h4> 
-</body>
+      document.getElementById('business-name').textContent = businessName;
+      document.getElementById('welcome-message').textContent = welcomeMessage;
+      document.getElementById('phone-display').textContent = formatPhoneNumber(phoneNumber);
+      document.getElementById('button-text').textContent = buttonText;
+      document.getElementById('whatsapp-link').href = getWhatsAppLink(phoneNumber);
+    }
 
-<div><h2 ali
-</ul></div> 
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
 
-    <footer align="center"><h5>colocar endereço no rodapé da página</h5></footer> 
-   <h5><p><a data-fr-linked="true" href="//www.endereço facebook, @jottasillvaa ou github"></a>h5></a></p>
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['business_name', config.business_name || defaultConfig.business_name],
+        ['phone_number', config.phone_number || defaultConfig.phone_number],
+        ['welcome_message', config.welcome_message || defaultConfig.welcome_message],
+        ['button_text', config.button_text || defaultConfig.button_text]
+      ]);
+    }
 
-  
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    } else {
+      onConfigChange(defaultConfig);
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c1a574eb6f48051',t:'MTc2OTAzNTUxNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
